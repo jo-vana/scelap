@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Onboarding | Home</title>
+  <style>
+    body{ font-family:Helvetica,sans-serif;}
+    .region{
+      border: 1px solid red;
+      padding: 24px 2px 2px;
+      position: relative;
+    }
+    .region:after {
+      content: "region";
+    }
+    .clearfix{
+      overflow: hidden;
+    }
+    .block{
+      border: 1px solid blue;
+      position: relative;
+      padding-top: 24px;
+    }
+    .block:after {
+      content: "block";
+    }
+    .u-region__name,
+    .u-block__name{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      background: #444;
+      color: #ddd;
+      padding: 2px;
+    }
+    .region__header-top{
+      background: grey;
+    }
+    .menu {
+      text-align: center;
+    }
+    .menu li{
+      display: inline-block;
+    }
+
+    /* Layout */
+    @media (min-width: 960px) {
+      .container{
+        width: 960px;
+        margin: 0 auto;
+      }
+      .block__onboarding {
+        float: left;
+      }
+      .block__contact-top{
+        float: right;
+      }
+      .block__logo{
+        float: left;
+      }
+      .block__login{
+        float: right;
+      }
+    }
+  </style>
+</head>
+<body>
+<section id="region__header-top" class="region region__header-top clearfix">
+  <p class="u-region__name">Header-Top</p>
+  <div class="container">
+    <div id="block__onboarding" class="block block__onboarding">
+      <p class="u-block__name">Onboarding</p>
+      <p>On boarding project</p>
+    </div>
+    <div id="block__contact-top" class="block block__contact-top">
+      <p class="u-block__name">ContactTop</p>
+      <p>+381 11 555-0110, info@onboarding.com</p>
+    </div>
+  </div>
+</section>
+<section id="region__navigation" class="region clearfix">
+  <p class="u-region__name">Navigation</p>
+  <div class="container">
+    <div id="block__logo" class="block block__logo md-4-col">
+      <p class="u-block__name">Logo</p>
+      <img src="https://dummyimage.com/50x50/000/fff" alt="Logo">
+    </div>
+    <div id="block__menu-main" class="block block__menu-main">
+      <p class="u-block__name">Menu-Main</p>
+      <ul class="menu">
+        <li>Home</li>
+        <li>Companies</li>
+        <li>Events</li>
+        <li>Locations</li>
+      </ul>
+    </div>
+    <div id="block__login" class="block block__login">
+      <p class="u-block__name">Login</p>
+      <p>login</p>
+    </div>
+  </div>
+</section>
+<section id="region__banner" class="region">
+  <p class="u-region__name">Banner</p>
+  <div id="block__banner" class="block">
+    <p class="u-block__name">Banner</p>
+  </div>
+</section>
+<section id="region__main" class="region">
+  <div class="container">
+    <p class="u-region__name">Main</p>
+    <div id="block__Content" class="block">
+      <p class="u-block__name">Content</p>
+    </div>
+    <div id="block__sidebar" class="block">
+      <p class="u-block__name">Sidebar</p>
+    </div>
+  </div>
+</section>
+<section id="region__footer-top" class="region">
+  <p class="u-region__name">Footer-top</p>
+  <div class="container">
+    <div id="block__month-free" class="block">
+      <p class="u-block__name">Month Free</p>
+    </div>
+  </div>
+</section>
+<section id="region__footer" class="region">
+  <p class="u-region__name">Footer</p>
+  <div class="container">
+    <div id="block__footer-logo" class="block">
+      <p class="u-block__name">footer logo</p>
+    </div>
+    <div id="block__footer-menu" class="block">
+      <p class="u-block__name">footer menu</p>
+    </div>
+    <div id="block__footer-menu2" class="block">
+      <p class="u-block__name">footer menu2</p>
+    </div>
+    <div id="block__footer-contact" class="block">
+      <p class="u-block__name">footer contact</p>
+    </div>
+    <div id="block__footer-newsletter" class="block">
+      <p class="u-block__name">footer newsletter</p>
+    </div>
+  </div>
+</section>
+<section id="region__footer-copy" class="region">
+  <p class="u-region__name">footer-copy</p>
+  <div class="container">
+    <div id="block__footer-copy" class="block">
+      <p class="u-block__name">Footer Copyright</p>
+    </div>
+  </div>
+</section>
+<!--
+<section id="region__" class="region">
+  <p class="u-region__name"></p>
+  <div id="block__" class="block">
+    <p class="u-block__name"></p>
+  </div>
+</section>
+-->
+</body>
+</html>

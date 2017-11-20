@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout</title>
+  <style>
+    .tir{ background: #4ff;}
+    .magy{ background: #f4f;}
+    .yellow{ background: #ff4;}
+    .blue{ background: #44f;}
+    .green{ background: #4f4;}
+    .red{ background: #f44;}
+    .gray{ background: #eee;}
+    .clearfix{
+      overflow: hidden;
+    }
+    @media (min-width: 960px) {
+      .sidebar_first,
+      .sidebar_second {
+        width: 25%;
+        float: left;
+      }
+      .sidebar-both .content {
+        width: 50%;
+        float: left;
+      }
+      .sidebar-one .content {
+        width: 75%;
+        float: left;
+      }
+      .content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="sidebar-both">
+<div class="header red">Header</div>
+<div class="clearfix">
+  <div class="sidebar_first green">Sidebar first</div>
+  <div class="content magy">Content</div>
+  <div class="sidebar_second tir">Sidebar second</div>
+</div>
+<div class="footer gray">Footer</div>
+</body>
+</html>
