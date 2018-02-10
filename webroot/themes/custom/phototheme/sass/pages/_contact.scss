@@ -1,0 +1,70 @@
+// ========================================
+//
+// @file _contact.scss
+// Contact page layouts, widths, margins, paddings
+//
+// ========================================
+.layout-content-pages {
+  article.node--type-contact {
+    h2 {
+      display: none;
+    }
+    .contact-layout {
+      display: block;
+      @include clearfix;
+      min-height: 180px;
+      padding-top: 50px;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      .field--name-field-phone,
+      .field--name-field-address,
+      .field--type-email {
+        @include gridy(3, 30px);
+        display: inline-block;
+        float: left;
+        position: relative;
+        //width: 30%;
+        //margin-left: 30px;
+        .field__label {
+          font-weight: 300;
+          font-style: normal;
+          font-family: $font-roboto_mono;
+          color: $color-label;
+          font-size: 16px;
+          line-height: 1.4;
+          letter-spacing: 0px;
+        }
+        .field__item {
+          font-weight: 400;
+          font-style: normal;
+          font-family: $font-roboto_mono;
+          color: $color-item;
+          font-size: 16px;
+          line-height: 1.9;
+          letter-spacing: 0px;
+          a {
+            color: $color-item;
+            text-decoration: none;
+            &:hover {
+              color: $color-label;
+            }
+          }
+        }
+      }
+      .field--name-field-phone:before {
+        @include contact-icon;
+        content: $fa-var-phone;
+      }
+      .field--name-field-address:before {
+        @include contact-icon;
+        content: $fa-var-location-arrow;
+      }
+      .field--type-email:before {
+        @include contact-icon;
+        content: $fa-var-envelope;
+      }
+    }
+  }
+}

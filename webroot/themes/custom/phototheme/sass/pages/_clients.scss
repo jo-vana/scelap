@@ -1,0 +1,68 @@
+// ========================================
+//
+// @file _clients.scss
+// Clients page layouts, widths, margins, paddings
+//
+// ========================================
+.node-clients {
+  max-width: 1160px;
+  margin: 0 auto;
+  .field--name-body {
+    p {
+      font-weight: 400;
+      font-style: normal;
+      font-family: $font-roboto_mono;
+      color: $color-item;
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0px;
+    }
+  }
+  .field--name-field-client {
+    display: block;
+    @include clearfix;
+    padding: 30px 0;
+  }
+  .field--name-field-client>.field__item {
+    @include gridy(3, 20px);
+    display: inline-block;
+    float: left;
+    height: 500px;
+    width: 29%;
+    .paragraph--type--client {
+      display: block;
+      margin: 15px;
+      border: 1px solid $color-mint;
+      padding: 25px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      .field--name-field-logo {
+        padding-top: 30px;
+        height: 40%;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .field--name-field-company-name {
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-family: $font-roboto_mono;
+        color: $color-label;
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 0px;
+      }
+      .field--name-field-about {
+        font-weight: 400;
+        font-style: normal;
+        font-family: $font-roboto_mono;
+        color: $color-item;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0px;
+      }
+    }
+  }
+}

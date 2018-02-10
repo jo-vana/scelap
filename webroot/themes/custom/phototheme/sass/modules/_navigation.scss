@@ -5,6 +5,38 @@
 //
 // ========================================
 
-.navigation {
-
+.menu--main {
+  ul.menu {
+    display: flex;
+    max-width: 545px;
+    margin: 0 auto;
+    list-style: none;
+    li {
+      display: inline-flex;
+      margin-left: 50px;
+      a {
+        font-family: $font-roboto_mono;
+        font-weight: 700;
+        font-style: normal;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 19px;
+        position: relative;
+        display: block;
+        text-align: left;
+        transition: .3s;
+        z-index: 1;
+        letter-spacing: .48px;
+        &.is-active {
+          color: $color-white-hover;
+        }
+      }
+      &:hover {
+        a {
+          color: $color-white-hover;
+        }
+      }
+    }
+  }
 }

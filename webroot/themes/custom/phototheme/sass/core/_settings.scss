@@ -13,14 +13,23 @@ $base-font-size: 16px;
 // - - - - - - - - - - - - - - - - - - - -
 // Colors
 // - - - - - - - - - - - - - - - - - - - -
-$color-white: white;
-$color-black: black;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-black-hover: rgba(0, 0, 0, 0.46);
+$color-grey: #333;
+$color-white-hover: #d1c8bc;
+$color-mint: #2aa198;
+$color-mint-hover: #317b76;
+$color-label: #4D4D51;
+$color-item: #7f7f7f;
+$h-one: #1e1d24;
 
 // - - - - - - - - - - - - - - - - - - - -
 // Fonts
 // - - - - - - - - - - - - - - - - - - - -
 $font-open-sans: 'Open Sans', sans-serif;
-
+$font-roboto_mono:'Roboto Mono', monospace;
+$font-awesome: 'FontAwesome';
 // - - - - - - - - - - - - - - - - - - - -
 // Grid
 // - - - - - - - - - - - - - - - - - - - -

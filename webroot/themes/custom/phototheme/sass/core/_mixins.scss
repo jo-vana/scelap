@@ -84,3 +84,27 @@
 		opacity: $opacity;
 	}
 }
+// - - Gridy
+@mixin gridy($number-of-items, $margin) {
+	width: calc((100% / #{$number-of-items}) - ( #{$margin} * (#{$number-of-items} - 1) / #{$number-of-items}));
+	margin-bottom: #{$margin};
+
+	&:not(:nth-child( #{$number-of-items}n)) {
+		margin-right: #{$margin};
+	}
+}
+// - - Icons on contact page
+@mixin contact-icon {
+	font-family: $font-awesome;
+	font-size: 30px;
+	color: $color-white;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: $color-mint;
+	text-align: center;
+	padding-top: 15px;
+	position: absolute;
+	left: -70px;
+}

@@ -4,4 +4,99 @@
 // Basic page layouts, widths, margins, paddings
 //
 // ========================================
+.layout-container {
+  .layout-content {
+    max-width: 1130px;
+    margin:  auto;
+  }
+  .layout-content-pages {
+    width: 100%;
+    min-height: 400px;
+    h1 {
+      padding-top: 30px;
+      text-align: center;
+      font-weight: 700;
+      font-style: normal;
+      font-family: $font-roboto_mono;
+      color: $h-one;
+      font-size: 24px;
+      line-height: 1.3;
+      letter-spacing: 7px;
+    }
+    // - - layout for 404 page
+    .foureofoure-page {
+      padding-top: 50px;
+        .error-page {
+          .field--name-body {
+            display: block;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            h2 {
+              font-size: 70px;
+            }
+          }
+        }
+    }
+  }
+  #block-backtotop {
+    display: block;
+    width: 0px;
+    height: 0px;
+    a {
+      visibility: hidden;
+    }
+    a.show {
+      visibility: visible;
+      display: block;
+      background-color: $color-mint;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      margin: 30px;
+      position: fixed;
+      bottom: 30px;
+      right: 0;
+      transition: background-color .3s ease-in-out;
+      z-index: 1000;
+      color: transparent;
+      &::before {
+        content: '\f106';
+        font-family: $font-awesome;
+        font-size: 26px;
+        line-height: 50px;
+        position: relative;
+        top: -1px;
+        color: #f9f9f9;
+        left: 16px;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: $color-mint-hover;
+      }
+    }
+  }
+}
+// - - layout for all pages except front page
+header.node-header {
+  background-image: none;
+  max-height: 130px;
+  background-color: $color-grey;
+  .region-header {
+    @include clearfix;
+    max-width: 1160px;
+    margin: 0 auto;
+    .block-system-branding-block {
+      display: inline-block;
+      margin: 0;
+    }
+    .menu--main {
+      display: inline-block;
+      float: right;
+      margin: 50px 0;
+    }
+  }
+}
 

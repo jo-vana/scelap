@@ -14,6 +14,7 @@ libraries:
 # Regions
 regions:
   header: 'Header'
+  banner: 'Banner'
   content: 'Content'
   sidebar: 'Sidebar'
   footer: 'Footer'

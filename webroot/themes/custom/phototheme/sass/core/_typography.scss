@@ -4,8 +4,10 @@
 // Base level typography, fonts, colors, sizes
 //
 // ========================================
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 p {
+  font-family: $font-roboto_mono;
 
 	&:last-child {
 	  margin-bottom: 0;
@@ -13,7 +15,7 @@ p {
 }
 
 a {
-  transition: 0.4s;
+  transition: all .3s ease;
 }
 
 h1,
