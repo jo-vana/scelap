@@ -7,19 +7,32 @@
 .about-page {
   display: block;
   min-height: 600px;
-  background-image: url("/../../../../../sites/default/files/2018-02/372af9348037eca875009637530c863c.jpg");
+  background-image: url("/../../../../../sites/default/files/images/Me.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 262% 92%;
-  background-size: 85%;
+  background-position: 105% 88%;
   overflow: hidden;
+  background-size: contain;
+  margin-bottom: -16px;
+  background-image: opacity(0);
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -moz-animation: fadein 4s; /* Firefox */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera */
+  animation: fadein 4s;
+  @-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
   .node__content {
     max-width: 1160px;
     margin: 0 auto;
     .about-me {
       display: block;
-      max-width: 650px;
+      max-width: 800px;
       margin-top: 100px;
+      padding-right: 1rem;
+      padding-left: 1rem;
       h2 {
         text-transform: uppercase;
         font-weight: 700;

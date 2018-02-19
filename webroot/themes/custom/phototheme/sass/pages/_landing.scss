@@ -68,7 +68,7 @@ h1 {
    }
   }
 }
-#block-views-block-front-page-block-block-1 {
+#block-views-block-front-page-album-img-block-1 {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
@@ -87,23 +87,19 @@ h1 {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 45px;
+    text-transform: uppercase;
   }
   .view-content {
     display: block;
     @include clearfix;
-    //display: flex;
-    //flex-wrap: wrap;
-    //align-items: flex-start;
-    //justify-content: space-between;
-    //align-content: space-between;
+    text-align: center;
     .views-row {
-      //display: inline-flex;
       display: inline-block;
       float: left;
       @include gridy(4, 20px);
       position: relative;
       margin-bottom: 30px;
-      .views-field-name {
+      .views-field-title {
         display: block;
         position: absolute;
         opacity: 0;
@@ -136,19 +132,38 @@ h1 {
           }
         }
       }
-      .views-field-field-term-img {
+      .views-field-field-category-photo {
         display: block;
         position: relative;
         filter: grayscale(100%);
       }
       &:hover {
-        .views-field-name {
+        .views-field-title {
           opacity: 1;
         }
-        .views-field-field-term-img {
+        .views-field-field-category-photo {
           filter: grayscale(0%);
         }
       }
     }
   }
 }
+@media screen and (max-width: $screen-sm-min){
+  #block-views-block-front-page-album-img-block-1 {
+    .view-content {
+      .views-row {
+        @include gridy(2, 20px);
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-xs-min){
+  #block-views-block-front-page-album-img-block-1 {
+    .view-content {
+      .views-row {
+        @include gridy(1, auto);
+      }
+    }
+  }
+}
+

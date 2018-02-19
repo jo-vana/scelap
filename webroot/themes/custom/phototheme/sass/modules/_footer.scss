@@ -27,9 +27,10 @@ footer {
     }
     ul.social-media-links--platforms {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       li {
         display: inline-flex;
+        margin: 0 20px;
         vertical-align: top;
         a {
          span {

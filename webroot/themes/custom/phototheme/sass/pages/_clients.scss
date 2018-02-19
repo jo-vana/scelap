@@ -38,7 +38,7 @@
       height: 100%;
       text-align: center;
       .field--name-field-logo {
-        padding-top: 30px;
+        //padding-top: 30px;
         height: 40%;
         img {
           margin: 0 auto;
@@ -46,6 +46,7 @@
       }
       .field--name-field-company-name {
         padding-bottom: 20px;
+        padding-top: 20px;
         font-weight: 300;
         font-style: normal;
         font-family: $font-roboto_mono;

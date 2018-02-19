@@ -11,6 +11,7 @@ global-js:
   version: 1.x
   js:
     assets/scripts/application.js:
+    assets/scripts/jquery.flexslider.js:
       minified: false
   dependencies:
     - core/jquery
