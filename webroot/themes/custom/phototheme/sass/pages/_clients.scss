@@ -6,6 +6,8 @@
 // ========================================
 .node-clients {
   max-width: 1160px;
+  padding-left: 1em;
+  padding-right: 1em;
   margin: 0 auto;
   .field--name-body {
     p {
@@ -22,19 +24,24 @@
     display: block;
     @include clearfix;
     padding: 30px 0;
+    @media screen and(max-width: $screen-md-min) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
   .field--name-field-client>.field__item {
     @include gridy(3, 20px);
     display: inline-block;
     float: left;
     height: 500px;
-    width: 29%;
+    //width: 29%;
     .paragraph--type--client {
       display: block;
       margin: 15px;
       border: 1px solid $color-mint;
       padding: 25px;
-      width: 100%;
+      width: 90%;
       height: 100%;
       text-align: center;
       .field--name-field-logo {
@@ -64,6 +71,10 @@
         line-height: 1.9;
         letter-spacing: 0px;
       }
+    }
+    @media screen and(max-width: $screen-md-min) {
+      display: inline-flex;
+      width: 50%;
     }
   }
 }

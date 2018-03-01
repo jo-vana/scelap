@@ -31,6 +31,20 @@
         }
     };
 
+    // Mobile menu
+
+    Drupal.behaviors.mobileMenue = {
+        attach: function (context) {
+
+            $('.menu--mobile-main-menu > .menu-toggle', context).on('click', function () {
+                // console.log('test');
+                $('.menu--mobile-main-menu > ul').toggleClass('show');
+            });
+
+
+        }
+    };
+
 
 
 

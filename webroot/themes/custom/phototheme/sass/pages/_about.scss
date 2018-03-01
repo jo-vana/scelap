@@ -26,6 +26,8 @@
   }
   .node__content {
     max-width: 1160px;
+    padding-left: 1em;
+    padding-right: 1em;
     margin: 0 auto;
     .about-me {
       display: block;
@@ -51,6 +53,9 @@
         font-size: 16px;
         line-height: 1.9;
         letter-spacing: 0px;
+      }
+      @media screen and(max-width: $screen-md-min) {
+        max-width: 550px;
       }
     }
   }

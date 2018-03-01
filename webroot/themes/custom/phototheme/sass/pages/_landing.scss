@@ -19,6 +19,9 @@ header {
   img {
     filter: invert(100%);
   }
+  @media screen and(max-width: $screen-xs-min) {
+    max-width: 255px;
+  }
 }
 h1 {
   font-family: $font-roboto_mono;
@@ -38,12 +41,24 @@ h1 {
     line-height: 1.2;
     letter-spacing: 3px;
     margin-bottom: 0;
+    @media screen and(max-width: $screen-xs-min) {
+      font-size: 24px;
+    }
   }
   h2 {
     font-size: 72px;
     line-height: 1;
     letter-spacing: 14px;
     margin-top: 20px;
+    @media screen and(max-width: $screen-sm-min) {
+      font-size: 55px;
+      letter-spacing: 3px;
+    }
+    @media screen and(max-width: $screen-xs-min) {
+      font-size: 40px;
+      letter-spacing: 3px;
+    }
+
   }
   p {
     font-size: 18px;
@@ -66,6 +81,9 @@ h1 {
        background-color: $color-mint-hover;
      }
    }
+  }
+  @media screen and (max-width: $screen-sm-min){
+    margin-top: 50px;
   }
 }
 #block-views-block-front-page-album-img-block-1 {
@@ -129,6 +147,9 @@ h1 {
             left: 50%;
             transform: translateX(-50%);
             font-size: 24px;
+            @media screen and(max-width: $screen-xs-min) {
+              top: 30%;
+            }
           }
         }
       }
@@ -145,25 +166,37 @@ h1 {
           filter: grayscale(0%);
         }
       }
-    }
-  }
-}
-@media screen and (max-width: $screen-sm-min){
-  #block-views-block-front-page-album-img-block-1 {
-    .view-content {
-      .views-row {
-        @include gridy(2, 20px);
+      @media screen and(max-width: $screen-md-min) {
+        display: inline-flex;
+        width: 45%;
+      }
+      @media screen and(max-width: $screen-sm-min) {
+        width: 59%;
       }
     }
-  }
-}
-@media screen and (max-width: $screen-xs-min){
-  #block-views-block-front-page-album-img-block-1 {
-    .view-content {
-      .views-row {
-        @include gridy(1, auto);
-      }
+    @media screen and(max-width:$screen-md-min ) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
     }
   }
 }
+//@media screen and (max-width: $screen-sm-min){
+//  #block-views-block-front-page-album-img-block-1 {
+//    .view-content {
+//      .views-row {
+//        @include gridy(2, 20px);
+//      }
+//    }
+//  }
+//}
+//@media screen and (max-width: $screen-xs-min){
+//  #block-views-block-front-page-album-img-block-1 {
+//    .view-content {
+//      .views-row {
+//        @include gridy(1, auto);
+//      }
+//    }
+//  }
+//}
 

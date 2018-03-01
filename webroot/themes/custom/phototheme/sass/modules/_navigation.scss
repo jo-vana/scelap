@@ -37,6 +37,96 @@
           color: $color-white-hover;
         }
       }
+      @media screen and (max-width: $screen-md-min) {
+        margin-left: 30px;
+      }
     }
+  }
+  @media screen and( max-width: $screen-sm-min){
+    display: none;
+  }
+}
+.menu--mobile-main-menu {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  .menu-toggle {
+    color: $color-white;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 16px;
+    left: 50%;
+    padding-top: 16px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    margin: 0 auto;
+    span {
+      width: 50px;
+      &.fa-bars {
+        width: 100%;
+        //float: right;
+        //clear: right;
+      }
+    }
+  }
+  ul.menu {
+    overflow:hidden;
+    //transition:transform 0.3s ease-out;
+    transform:scaleY(0);
+    height: 50px;
+    padding-top: 60px;
+    position: relative;
+    background-color: $color-black-hover;
+    width: 100%;
+    transition: all .3s ease-in-out .1s;
+    margin: 0 auto;
+    li.menu-item {
+      height: 0;
+      transition: all .3s ease-in-out .1s;
+      a {
+        display: none;
+        font-family: $font-roboto_mono;
+        font-weight: 700;
+        font-style: normal;
+        color: #ffffff;
+        visibility: hidden; /* hides sub-menu */
+        opacity: 0;
+        transform: translateY(-2em);
+        z-index: -1;
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+        &.is-active {
+          color: $color-white-hover;
+        }
+      }
+      &:hover {
+        a {
+          color: $color-white-hover;
+        }
+      }
+    }
+    &.show {
+      height:auto;
+      transform:scaleY(1);
+      li {
+        height: auto;
+        a {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          z-index: 1;
+          transition-delay: 0s, 0s, 0.3s;
+        }
+      }
+    }
+  }
+  @media screen and( max-width: $screen-sm-min){
+    display: block;
   }
 }

@@ -96,7 +96,48 @@ header.node-header {
       display: inline-block;
       float: right;
       margin: 50px 0;
+      @media screen and(max-width: $screen-sm-min) {
+        display: none;
+      }
     }
+  }
+  @media screen and (max-width: $screen-md-min) {
+    .region-header {
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+  @media screen and(max-width: $screen-sm-min) {
+    .region-header {
+      margin: 0;
+      .block-system-branding-block {
+        //display: block;
+        margin: 0 auto;
+      }
+      .menu--mobile-main-menu {
+        .menu-toggle {
+          top: -100px;
+          margin: 0 auto;
+          left: 0;
+          right: -80%;
+        }
+        .menu {
+          background-color: $color-grey;
+          z-index: -1;
+          top: -300px;
+          opacity: 0;
+          height: 0;
+          transition: all .3s ease-in-out .3s;
+          &.show {
+            top: -20px;
+            z-index: 400;
+            opacity: 1;
+            height: auto;
+          }
+        }
+      }
+    }
+    max-height: 140px;
   }
 }
 
